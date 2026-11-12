@@ -1,1 +1,148 @@
-/* this is where the styles goes */
+
+/* BUTTON COMPONENT */
+
+.mm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-gap);
+
+  min-width: var(--button-min-width);
+  height: var(--button-height);
+
+  padding: var(--button-padding-block)
+           var(--button-padding-inline);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-12);
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              color 0.2s ease;
+}
+
+/* Primary button */
+
+.mm-button--primary {
+  background-color: var(--color-california-default);
+  color: var(--color-white);
+}
+
+.mm-button--primary:hover {
+  background-color: var(--color-california-hover);
+}
+
+/* Outlined button */
+
+.mm-button--outline {
+  background-color: var(--color-white);
+  color: var(--color-california-default);
+  border-color: var(--color-california-default);
+}
+
+.mm-button--outline:hover {
+  background-color: var(--color-california-subtle);
+}
+
+/* Dark orange button */
+
+.mm-button--dark {
+  background-color: var(--color-california-950);
+  color: var(--color-white);
+}
+
+/* Disabled state */
+
+.mm-button:disabled {
+  background-color: var(--color-wild-sand-n100);
+  color: var(--color-fuscous-gray-n700);
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Keyboard focus */
+
+.mm-button:focus-visible {
+  outline: 2px solid var(--color-california-c400);
+  outline-offset: 3px;
+}
+
+/* Full width */
+
+.mm-button--full {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mm-button--full {
+    width: auto;
+  }
+}
+
+
+/* INPUT COMPONENT */
+
+.mm-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.mm-input-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.mm-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+
+  border: 1px solid var(--color-iron-n300);
+  border-radius: var(--radius-12);
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  font-family: var(--font-body);
+  font-size: 14px;
+
+  outline: none;
+  transition: border-color 0.2s ease,
+              background-color 0.2s ease;
+}
+
+.mm-input::placeholder {
+  color: var(--color-fuscous-gray-n700);
+  opacity: 0.6;
+}
+
+.mm-input:focus {
+  border: 2px solid var(--color-california-default);
+}
+
+.mm-input--error {
+  border: 1px solid var(--color-coral-red-error);
+  background-color: var(--color-pippin-error-light);
+}
+
+.mm-input--error:focus {
+  border: 2px solid var(--color-coral-red-error);
+}
+
+.mm-input-error {
+  margin: 0;
+  color: var(--color-coral-red-error);
+  font-size: 12px;
+}
+
+

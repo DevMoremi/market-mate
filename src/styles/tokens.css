@@ -1,1 +1,90 @@
-/* this is where the styles goes */
+:root {
+    /* Brand tokens */
+    --color-primary: var(--color-california-default);
+    --color-primary-hover: var(--color-california-hover);
+    --color-primary-subtle: var(--color-california-subtle);
+    --color-primary-light: var(--color-california-light);
+
+    --color-primary-accent: var(--color-california-c400);
+    --color-primary-border: var(--color-california-c200);
+    --color-primary-dark: var(--color-california-950);
+
+    /* Text tokens */
+    --color-text-primary: var(--color-mine-shaft-n800);
+    --color-text-secondary: var(--color-fuscous-gray-n700);
+    --color-text-inverse: var(--color-white);
+
+    /* Background tokens */
+    --color-background: var(--color-white);
+    --color-surface: var(--color-alabaster-n50);
+    --color-surface-muted: var(--color-wild-sand-n100);
+
+    /* Border tokens */
+    --color-border: var(--color-iron-n300);
+    --color-border-muted: var(--color-grey);
+
+    /* Status tokens */
+    --color-success-background: var(--color-blue-romance-success-light);
+    --color-warning-background: var(--color-beeswax-warning-light);
+    --color-error: var(--color-coral-red-error);
+    --color-error-background: var(--color-pippin-error-light);
+
+    /* Component tokens */
+    --button-background: var(--color-primary);
+    --button-background-hover: var(--color-primary-hover);
+    --button-text: var(--color-white);
+
+    --card-background: var(--color-white);
+    --card-border: var(--color-border);
+    --card-shadow: var(--shadow-card);
+
+    --input-border: var(--color-border);
+    --input-background: var(--color-white);
+
+    /* SPACING TOKENS */
+
+    /* Buttons */
+    --button-padding-block: var(--spacing-16);
+    --button-padding-inline: var(--spacing-8);
+    --button-gap: var(--spacing-10);
+
+    /* Cards */
+    --card-padding: var(--spacing-20);
+    --card-gap: var(--spacing-16);
+
+    /* Card buttons */
+    --card-button-padding-block: var(--spacing-24);
+    --card-button-padding-inline: var(--spacing-12);
+
+    /* Nested cards */
+    --nested-card-padding: var(--spacing-16);
+    --nested-card-gap: var(--spacing-12);
+
+    /* Market cards */
+    --market-card-padding: var(--spacing-20);
+
+    /* Tags */
+    --tag-padding-block: var(--spacing-4);
+    --tag-padding-inline: var(--spacing-8);
+
+    /* Badges */
+    --badge-padding: var(--spacing-6);
+    --badge-gap: var(--spacing-10);
+
+    /* Menu list */
+    --menu-list-padding: var(--spacing-12);
+    --menu-list-gap: var(--spacing-10);
+
+    /* BORDER RADIUS TOKENS */
+    --input-radius: var(--radius-5);
+    --card-radius: var(--radius-12);
+    --card-button-radius: var(--radius-12);
+    --nested-card-radius: var(--radius-8);
+    --market-card-radius: var(--radius-12);
+
+    --badge-radius: var(--radius-10);
+    --menu-list-radius: var(--radius-24);
+
+    /* SHADOW TOKENS */
+    --card-shadow: var(--shadow-card);
+}

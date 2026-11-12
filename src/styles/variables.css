@@ -1,1 +1,81 @@
-/* this is where the styles goes */
+@theme inline {
+    --font-sans: var(--font-manrope);
+}
+
+:root {
+    /* Typography */
+    --font-heading: var(--font-manrope);
+    --font-body: var(--font-manrope);
+
+    /* Heading sizes */
+    --heading-1: clamp(32px, 5vw, 64px);
+    --heading-2: clamp(30px, 4.7vw, 60px);
+    --heading-3: clamp(28px, 4.4vw, 56px);
+    --heading-4: clamp(26px, 4.1vw, 52px);
+    --heading-5: clamp(24px, 3.8vw, 48px);
+    --heading-6: clamp(24px, 3.5vw, 44px);
+    --heading-7: clamp(22px, 3.2vw, 40px);
+    --heading-8: clamp(22px, 2.9vw, 36px);
+    --heading-9: clamp(20px, 2.6vw, 32px);
+    --heading-10: clamp(18px, 2.3vw, 28px);
+    --heading-11: clamp(18px, 2vw, 24px);
+    --heading-12: clamp(18px, 1.7vw, 20px);
+    --heading-13: clamp(16px, 1.5vw, 18px);
+
+    /* Body sizes */
+    --body-large: 16px;
+    --body-medium: 14px;
+    --body-small: 12px;
+
+    /* primary/button colours */
+    --color-califronia-default: #E27300;
+    --color-california-hover: #BB4E02;
+    --color-california-subtle: #FFFBEA;
+    --color-california-c200: #FEE9A0;
+    --color-california-c400: #F5A623;
+    --color-california-light: #FFF3C5;
+    --color-california-950: #7C310B;
+
+    /* Status colours */
+    --color-blue-romance-success-light: #D1FAE5;
+    --color-beeswax-warning-light: #FEF3C7;
+    --color-coral-red-error: #EF4444;
+    --color-pippin-error-light: #FEE2E2;
+
+    /* Neutral/background colors*/
+    --color-Alabaster-n50: #FAFAFA;
+    --color-fuscuous-gray-n700: #4D4D4D;
+    --color-wild-sand-n100: #F5F5F5;
+    --color-iron-n300: #CCCCCC;
+    --color-grey: #D9D9D9;
+    --color-black: #111111;
+    --color-mine-shaft-n800: #333333;
+    --color-white: #FFFFFF;
+
+    /* Spacing primitives */
+    --spacing-4: 4px;
+    --spacing-6: 6px;
+    --spacing-8: 8px;
+    --spacing-10: 10px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+
+    /* Border radius primitives */
+    --radius-5: 5px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-24: 24px;
+
+    /* Shadow primitives */
+    --shadow-card: 0px 2px 4px 0px #0000001F;
+
+    /* Button dimensions */
+    --button-height: 52px;
+    --button-min-width: 151px;
+
+    /* Smaller card buttons */
+    --card-button-height: 44px;
+}
